@@ -19,8 +19,8 @@ Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here 
 
 
 ##### Notes
-Elastic Server IP:
-18.219.88.108
+Elastic Server IP: 18.219.88.108
 
-Remote shell command:
-ssh -i [key pair file] ubuntu@[ip address]
+Domain: pizzapiefanclub.click
+
+Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
