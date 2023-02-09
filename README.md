@@ -18,9 +18,12 @@ Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here 
 
 
 
-##### Notes
+##### Startup Notes
 Elastic Server IP: 18.219.88.108
 
 Domain: pizzapiefanclub.click
 
 Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
+
+##### Class Notes
+I did the Simon assignment. It was kind of a difficulty spike.
