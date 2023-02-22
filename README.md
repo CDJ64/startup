@@ -26,4 +26,6 @@ Domain: pizzapiefanclub.click
 Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
 
 ##### Class Notes
-I did the Simon assignment. It was kind of a difficulty spike.
+Okay, I'll start putting notes here now so I can prepare for exams.
+
+...I can't think of anything right now, but I'll try to at least add to this during the midterm review.
