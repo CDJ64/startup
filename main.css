@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 375px; */
+}
+
+header {
+    flex: 0 80px;
+}
+
+menu {
+    display: flex;
+    flex-direction: row !important;
+    list-style: none;
+}
+
+.navbar-brand {
+    padding: 0.3em;
+    margin: 0.3em;
+    /* border-bottom: solid rgb(182, 182, 182) thin; */
+}
+
+.nav-item {
+    padding: 0 0.3em;
+}
+  
+main {
+    flex: 1 calc(100vh - 110px);
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: space-around; */
+}
+  
+footer {
+    flex: 0 30px;
+}
