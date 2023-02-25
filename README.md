@@ -25,7 +25,7 @@ Domain: pizzapiefanclub.click
 
 Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
 
-##### Class Notes
+# Class Notes
 Okay, I'll start putting notes here now so I can prepare for exams.
 
 CSS Selectors:
@@ -42,5 +42,15 @@ CSS Selectors:
 - element:pseudo
 
 CSS Units:
-- px
-- etc...
+- px:   number of pixels
+- pt:   number of points (72 points = 1 inch)
+- in:   number of inches
+- cm:   number of centimeters
+- %:    percentage of parent
+- em:   multiplier of width of m in parent's font
+- rem:  multiplier of width of m in root's font
+- ex:   multiplier of height of element's font
+- vw:   percentage of viewport width
+- vh:   percentage of viewport height
+- vmin: percentage of viewport's smaller dimension
+- vmax: percentage of viewport's larger dimension
