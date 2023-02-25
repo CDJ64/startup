@@ -27,21 +27,39 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="survey.html">Survey</a>
+                        <a class="nav-link active" href="survey.html">Survey</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                 </menu>
             </nav>
         </header>
         <main class="container-fluid text-center">
-            <h1>About Pizza Pie Fanclub</h1>
-            <p>This website is a project created for a college assignment in CS 260. 
-                I decided to build off of something I like-- pizza! 
-                I thought it would be cool if people could share their pizza preferences and certain data could be displayed in charts.</p>
-            <p>Unfortunately, I don't think this website will continue to exist once I'm done with the class. 
-                Running a website costs money, you know, even if it's just a silly pizza page.</p>
+            <h2>Which do you prefer?</h2>
+            <menu>
+                <li>
+                    <button class="survey-button">Cheese</button>
+                </li>
+                <li>
+                    <button class="survey-button">Pepperoni</button>
+                </li>
+                <li>
+                    <button class="survey-button">I like/dislike them equally</button>
+                </li>
+            </menu>
+            <svg
+                aria-hidden="true"
+                viewBox="0 0 100 100"
+                height="300"
+                width="300"
+            >
+                <!-- SVG
+                    M move <to x,y>
+                    Q quadratic curve <control point x,y> <to x,y>
+                -->
+                <path d="M 50,100 Q 100,100 100,50 Q 100,0 50,0 Q 0,0 0,50 Q 0,100 50,100" fill="yellow" />
+            </svg>
         </main>
         <footer class="container-fluid bg-secondary text-light">
             <a class="text-reset" href="https://github.com/CDJ64/simon">Made by CDJ64</a>
