@@ -32,4 +32,15 @@ CSS Selectors:
 - element
 - .class
 - #id
-- [insert more complicated stuff here]
+- element descendant
+- element directchild
+- element ~ sibling
+- element + adjacentsibling
+- element\[attribute]
+- element\[attribute="value"]
+- element\[attribute*="part of value"]
+- element:pseudo
+
+CSS Units:
+- px
+- etc...
