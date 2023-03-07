@@ -54,3 +54,7 @@ CSS Units:
 - vh:   percentage of viewport height
 - vmin: percentage of viewport's smaller dimension
 - vmax: percentage of viewport's larger dimension
+
+JavaScript:
+
+is hard
