@@ -56,5 +56,38 @@ CSS Units:
 - vmax: percentage of viewport's larger dimension
 
 JavaScript:
+- is hard
+- functions as parameters and return values for other functions? what is this sorcery
 
-is hard
+Closure:
+```globalThis.x = 'global';
+
+const obj = {
+  x: 'object',
+  f: () => console.log(this.x),
+};
+
+obj.f();
+// OUTPUT: global```
+Arrow function is in global context, so `this` points to globalThis (or is globalThis?). Arrow function is created globally.
+```globalThis.x = 'global';
+
+const obj = {
+  x: 'object',
+  make: function () {
+    return () => console.log(this.x);
+  },
+};
+
+const f = obj.make();
+f();
+// OUTPUT: object```
+Arrow function is in context of object (because it's return value rather than member), so `this` points to object (bruh). Arrow function is not created until outer function is called.
+
+JS async/await:
+- If the code doesn't use import/export, you can only use await inside async functions (and async generators, but those are something that hasn't been covered before).
+- If the code does use import/export, it becomes a module and you can also use await outside of all functions/objects.
+
+Other stuff:
+- RegExp
+- Do I need to memorize/record all the different functions for these objects?
