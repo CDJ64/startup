@@ -32,10 +32,10 @@ CSS Selectors:
 - element
 - .class
 - #id
-- element descendant
-- element directchild
-- element ~ sibling
-- element + adjacentsibling
+- element descendant (selecting descendants)
+- element directchild (selecting children)
+- element ~ sibling (selecting siblings)
+- element + adjacentsibling (selecting siblings)
 - element\[attribute]
 - element\[attribute="value"]
 - element\[attribute*="part of value"]
