@@ -60,7 +60,8 @@ JavaScript:
 - functions as parameters and return values for other functions? what is this sorcery
 
 Closure:
-```globalThis.x = 'global';
+```
+globalThis.x = 'global';
 
 const obj = {
   x: 'object',
@@ -68,9 +69,11 @@ const obj = {
 };
 
 obj.f();
-// OUTPUT: global```
+// OUTPUT: global
+```
 Arrow function is in global context, so `this` points to globalThis (or is globalThis?). Arrow function is created globally.
-```globalThis.x = 'global';
+```
+globalThis.x = 'global';
 
 const obj = {
   x: 'object',
@@ -81,7 +84,8 @@ const obj = {
 
 const f = obj.make();
 f();
-// OUTPUT: object```
+// OUTPUT: object
+```
 Arrow function is in context of object (because it's return value rather than member), so `this` points to object (bruh). Arrow function is not created until outer function is called.
 
 JS async/await:
