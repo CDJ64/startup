@@ -163,3 +163,6 @@ const literalRegex = /ab*/i;
 - regex.test(string) returns boolean
 - string.split(regex) returns array of substrings that were between regex (though the parameter can also just be a string)
 - string.search(regex) returns index
+
+## Address Later
+- ...What are event listeners again?
