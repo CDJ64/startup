@@ -26,7 +26,47 @@ Domain: pizzapiefanclub.click
 Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
 
 # Class Notes
-Okay, I'll start putting notes here now so I can prepare for exams.
+## Start
+General:
+- `chmod` in command line can change file permissions, but can also mark a file as executable ("`chmod +x filename.sh`"?)
+
+DNS:
+- domain name system
+- DNS record types include `address` (`A`) and `canonical name` (`CNAME`), among other types
+- `A` record maps from domain name to IP address
+- `CNAME` record maps from domain name to another domain name; domain name alias; lets two domain names go to the same website/IP
+- `cs260.cs.byu.edu` is a subdomain, not `cs260`
+
+## HTML
+General:
+- Inside to Outside: Content, Padding, Border, Margin
+
+Elements:
+- `<a href="#">Link Text</a>`
+- `<ul>` = unordered list
+- `<li>` = list item (i think)
+
+## CSS
+Fonts:
+- Loading a font on your website:
+```
+@font-face {
+  font-family: 'Quicksand';
+  src: url('https://cs260.click/fonts/quicksand.woff2');
+}
+
+p {
+  font-family: Quicksand;
+}
+```
+- Loading a font from another website:
+```
+@import url('https://fonts.googleapis.com/css2?family=Rubik Microbe&display=swap');
+
+p {
+  font-family: 'Rubik Microbe';
+}
+```
 
 CSS Selectors:
 - element
@@ -55,9 +95,15 @@ CSS Units:
 - vmin: percentage of viewport's smaller dimension
 - vmax: percentage of viewport's larger dimension
 
-JavaScript:
-- is hard
+Flex:
+- A lesser known flex-direction is column-reverse, which puts stuff bottom to top; also row-reverse for right to left?
+
+## JS
+General:
+- Javascript is hard
 - functions as parameters and return values for other functions? what is this sorcery
+- `<script>` in HTML
+- `const f = y => ++y;` (f increments and returns incremented value; if single line, no curly brackets or return means auto return)
 
 Closure:
 ```
@@ -88,10 +134,32 @@ f();
 ```
 Arrow function is in context of object (because it's return value rather than member), so `this` points to object (bruh). Arrow function is not created until outer function is called.
 
-JS async/await:
+JS Promises and async/await:
+- Stuff inside setTimeout's code parameter doesn't run until after delay parameter
 - If the code doesn't use import/export, you can only use await inside async functions (and async generators, but those are something that hasn't been covered before).
 - If the code does use import/export, it becomes a module and you can also use await outside of all functions/objects.
+- Code that awaits a function waits until the function completes before moving on; if code is inside a promise, stuff after the promise can still happen first
 
-Other stuff:
-- RegExp
-- Do I need to memorize/record all the different functions for these objects?
+JSON:
+- JSON stores data that can be converted to/from Javascript objects (or other data types)
+- It can store null values but not undefined
+- Object keys MUST be enclosed in DOUBLE QUOTES
+- JSON.stringify(object) returns json
+- JSON.parse(json) returns object (or whatever)
+
+Regular Expressions:
+```
+const objRegex = new RegExp('ab*', 'i');
+const literalRegex = /ab*/i;
+```
+- `/` delimits expression (is start and end); stuff after (like i) sets certain rules/properties
+- i means insensitive: NOT case sensitive
+- g means global: doesn't return after first match
+- m means multiline: ^/$ match start/end of line (respectively?)
+- etc
+- array.filter(functionThatTakesWordAndReturnsTruthValue) returns subset array of words that satsfied function
+- string.match(regex) returns array of matched words/etc
+- string.replace(regex, newtext)
+- regex.test(string) returns boolean
+- string.split(regex) returns array of substrings that were between regex (though the parameter can also just be a string)
+- string.search(regex) returns index
