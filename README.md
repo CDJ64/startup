@@ -28,7 +28,12 @@ Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
 # Class Notes
 ## Start
 General:
+- A web certificate is necessary to use HTTPS; Port 443 is reserved for HTTPS.
+
+Command Line:
 - `chmod` in command line can change file permissions, but can also mark a file as executable ("`chmod +x filename.sh`"?)
+- `-la` parameter on `ls` command outputs a long listing of all files
+- `ssh` creates a remote shell session
 
 DNS:
 - domain name system
@@ -36,15 +41,19 @@ DNS:
 - `A` record maps from domain name to IP address
 - `CNAME` record maps from domain name to another domain name; domain name alias; lets two domain names go to the same website/IP
 - `cs260.cs.byu.edu` is a subdomain, not `cs260`
+- `byu.edu` is a root domain
+- `edu` is a top level domain (TLD)
 
 ## HTML
 General:
+- `<!DOCTYPE html>` directs the browser to use relevant specifications when rendering the HTML
 - Inside to Outside: Content, Padding, Border, Margin
 
 Elements:
 - `<a href="#">Link Text</a>`
-- `<ul>` = unordered list
-- `<li>` = list item (i think)
+- `<ol>` = ordered list, `<ul>` = unordered list, `<li>` = list item
+- `<img src="http://imgs.xkcd.com/logo.png" />`
+- `<img>` between `<a>` and `</a>` gives the image itself a hyperlink
 
 ## CSS
 Fonts:
@@ -104,6 +113,7 @@ General:
 - functions as parameters and return values for other functions? what is this sorcery
 - `<script>` in HTML
 - `const f = y => ++y;` (f increments and returns incremented value; if single line, no curly brackets or return means auto return)
+- It is possible to add new properties to a JavaScript object dynamically
 
 Closure:
 ```
@@ -146,6 +156,7 @@ JSON:
 - Object keys MUST be enclosed in DOUBLE QUOTES
 - JSON.stringify(object) returns json
 - JSON.parse(json) returns object (or whatever)
+- A server can use the JSON format to send a web browser some data
 
 Regular Expressions:
 ```
