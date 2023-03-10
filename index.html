@@ -9,7 +9,7 @@
             icon element template:
             <link rel="icon" href="favicon.ico" />
         -->
-
+        <script src="login.js"></script>
         <link rel="stylesheet" href="main.css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -38,7 +38,9 @@
         <main class="container-fluid text-center">
             <h1>Welcome to Pizza Pie Fanclub!</h1>
             <p>Here you can share your pizza interests with other pizza lovers.</p>
-            <a href="survey.html"><button>Show me the pizza!</button></a>
+            <p>Please enter your name first:</p>
+            <input type="text" id="name" placeholder="Name" />
+            <a href="survey.html"><button onclick="login()">Show me the pizza!</button></a>
         </main>
         <footer class="container-fluid bg-secondary text-light">
             <a class="text-reset" href="https://github.com/CDJ64/simon">Made by CDJ64</a>
