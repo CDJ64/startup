@@ -7,13 +7,16 @@ const testData = [
 ];
 
 class PieChart {
+    chartData;
+
     constructor(data) {
+        // take in data and calculate total users in data
+        this.chartData = data;
+        let totalNumberOfPeople = data.reduce((sum, {total}) => sum + total, 0);
+        
         // query canvas and choose 2d style context
         const canvas = document.querySelector('canvas');
         const context = canvas.getContext('2d');
-
-        // calculate total users in data
-        let totalNumberOfPeople = data.reduce((sum, {total}) => sum + total, 0);
 
         // draw chart
         let currentAngle = 0;
@@ -30,6 +33,8 @@ class PieChart {
             context.fill();
         }
     }
+
+
 }
 
 
