@@ -19,7 +19,7 @@ Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here 
 ### Credits
 Made by CDJ64 for a computer science assignment.
 
-Special thanks to Sandra Moringa for a tutorial on pie charts! (https://www.section.io/engineering-education/javascript-canvas-piechart/)
+Special thanks to Sandra Moringa for her article/tutorial on pie charts! (https://www.section.io/engineering-education/javascript-canvas-piechart/)
 
 ##### Startup Notes
 Elastic Server IP: 18.219.88.108

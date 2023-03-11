@@ -23,19 +23,21 @@ class PieChart {
         // draw chart
         let currentAngle = 0;
         for (let row of data) {
-            //calculating the angle the slice (portion) will take in the chart
+            // calculating the angle the slice (portion) will take in the chart
             let portionAngle = (row.total / totalNumberOfPeople) * 2 * Math.PI;
-            //drawing an arc and a line to the center to differentiate the slice from the rest
+            // drawing an arc and line
             context.beginPath();
             context.arc(200, 200, 200, currentAngle, currentAngle + portionAngle);
             currentAngle += portionAngle;
             context.lineTo(200, 200);
-            //filling the slices with the corresponding mood's color
+            // filling the slice
             context.fillStyle = row.shade;
             context.fill();
         }
     }
 }
+
+
 
 
 
