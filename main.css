@@ -52,3 +52,14 @@ p {
 footer {
     flex: 0 30px;
 }
+
+.players {
+    flex: 0.1;
+    width: 100%;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.player-name {
+    color: rgb(116, 115, 56);
+  }
