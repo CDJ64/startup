@@ -46,18 +46,9 @@
                 <button class="survey-button option-pepperoni">Pepperoni</button>
                 <button class="survey-button option-neither">Neither</button>
             </menu>
-            <svg
-                aria-hidden="true"
-                viewBox="0 0 100 100"
-                height="300"
-                width="300"
-            >
-                <!-- SVG
-                    M move <to x,y>
-                    Q quadratic curve <control point x,y> <to x,y>
-                -->
-                <path d="M 50,100 Q 100,100 100,50 Q 100,0 50,0 Q 0,0 0,50 Q 0,100 50,100" fill="yellow" />
-            </svg>
+            <div class="chart-container">
+                <canvas width="400" height="400"></canvas>
+            </div>
         </main>
         <footer class="container-fluid bg-secondary text-light">
             <a class="text-reset" href="https://github.com/CDJ64/simon">Made by CDJ64</a>
