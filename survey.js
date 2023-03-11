@@ -44,9 +44,12 @@ class PieChart {
         }
     }
 
-    update(option) {
+    update(button) {
         // unused code for eventual database that pays attention to usernames:
         // const playerName = document.querySelector('.player-name').textContent;
+
+        // get option name
+        const option = button.id;
 
         // update data
         this.totalPeople += 1;

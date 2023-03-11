@@ -42,9 +42,9 @@
             </div>
             <h2>Which do you prefer?</h2>
             <menu>
-                <button class="survey-button option-cheese">Cheese</button>
-                <button class="survey-button option-pepperoni">Pepperoni</button>
-                <button class="survey-button option-neither">Neither</button>
+                <button id="Cheese" class="survey-button" onclick="pieChart.update(this)">Cheese</button>
+                <button id="Pepperoni" class="survey-button">Pepperoni</button>
+                <button id="Neither" class="survey-button">Neither</button>
             </menu>
             <div class="chart-container">
                 <canvas width="400" height="400"></canvas>
