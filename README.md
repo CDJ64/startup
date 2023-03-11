@@ -117,6 +117,7 @@ General:
 - `<script>` in HTML
 - `const f = y => ++y;` (f increments and returns incremented value; if single line, no curly brackets or return means auto return)
 - It is possible to add new properties to a JavaScript object dynamically
+- `myArray.reduce((accumulator, currentValue) => {})` applies the arrow function (called a callback function in this case) to each value in the array, where the accumulator is the return value of the previous iteration (for the first iteration, 0 unless an initial value parameter is added after the arrow function).
 
 Closure:
 ```
