@@ -15,6 +15,7 @@ class PieChart {
         // take in data and calculate total users in data
         this.chartData = data;
         this.totalPeople = this.chartData.reduce((sum, {total}) => sum + total, 0);
+
         // draw chart
         this.draw();
     }
@@ -23,9 +24,11 @@ class PieChart {
         // query canvas and choose 2d style context
         const canvas = document.querySelector('canvas');
         const context = canvas.getContext('2d');
+
         // clear canvas
         context.clearRect(0, 0, canvas.width, canvas.height);
-        // draw or redraw chart
+
+        // draw/redraw chart
         let currentAngle = 0;
         for (let row of this.chartData) {
             // calculating the angle the slice (portion) will take in the chart
@@ -41,8 +44,20 @@ class PieChart {
         }
     }
 
-    update() {
-        
+    update(option) {
+        // unused code for eventual database that pays attention to usernames:
+        // const playerName = document.querySelector('.player-name').textContent;
+
+        // update data
+        this.totalPeople += 1;
+        for (let row of this.chartData) {
+            if (row.option === option) {
+                row.total += 1;
+            }
+        }
+
+        // redraw chart
+        this.draw();
     }
 }
 
