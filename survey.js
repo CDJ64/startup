@@ -49,7 +49,7 @@ class PieChart {
         // const playerName = document.querySelector('.player-name').textContent;
 
         // get option name
-        const option = button.id;
+        const option = button.textContent;
 
         // update data
         this.totalPeople += 1;
