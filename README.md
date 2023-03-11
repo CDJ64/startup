@@ -7,8 +7,8 @@ Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here 
 ![A rough sketch depicting a Monthly Survey page where users can say whether they like pineapple pizza or not](/PizzaSketch.png)
 
 ### Features
-- A user log-in system allowing people to store information about their pizza preferences and interact with other users[^1]
-- Favorite Pizza and Favorite Topping interfaces with pie charts[^1]
+- A user log-in system allowing people to store information about their pizza preferences
+- Favorite Pizza and/or Favorite Topping interfaces with pie charts
 - Monthly Surveys for even more detailed pizza tastes[^1]
 - Pizza Chat for pizza discussions[^1]
 - About section[^1]
@@ -16,7 +16,10 @@ Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here 
 
 [^1]: Features are subject to potential change/removal
 
+### Credits
+Made by CDJ64 for a computer science assignment.
 
+Special thanks to Sandra Moringa for a tutorial on pie charts! (https://www.section.io/engineering-education/javascript-canvas-piechart/)
 
 ##### Startup Notes
 Elastic Server IP: 18.219.88.108
