@@ -1,9 +1,9 @@
 // Defining objects, classes, functions, etc. 
 
 const testData = [
-    {option: "Cheese", total: 1499, shade: "#0a9627"},
-    {option: "Pepperoni", total: 478, shade: "#960A2C"},
-    {option: "Neither", total: 195, shade: "#F73809"}
+    {option: "Cheese", total: 777, shade: "#FFFF00"},
+    {option: "Pepperoni", total: 700, shade: "#FF0000"},
+    {option: "Neither", total: 300, shade: "#FF8800"}
 ];
 
 class PieChart {
