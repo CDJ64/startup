@@ -12,11 +12,6 @@ class PieChart {
         const canvas = document.querySelector('canvas');
         const context = canvas.getContext('2d');
 
-        // test arc
-        // context.beginPath();
-        // context.arc(200,200, 200, Math.PI/2,  Math.PI);
-        // context.stroke();
-
         // calculate total users in data
         let totalNumberOfPeople = data.reduce((sum, {total}) => sum + total, 0);
 
