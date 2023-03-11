@@ -1,11 +1,12 @@
 // Defining objects, classes, functions, etc. 
-
+// TEST DATA ARRAY
 const testData = [
     {option: "Cheese", total: 777, shade: "#FFFF00"},
     {option: "Pepperoni", total: 700, shade: "#FF0000"},
     {option: "Neither", total: 300, shade: "#FF8800"}
 ];
 
+// PIECHART CLASS
 class PieChart {
     chartData;
     totalPeople;
@@ -40,11 +41,10 @@ class PieChart {
         }
     }
 
-    
+    update() {
+        
+    }
 }
-
-
-
 
 
 // Code to execute when page is opened
