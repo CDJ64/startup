@@ -8,11 +8,12 @@ const testData = [
 
 class PieChart {
     chartData;
+    totalPeople;
 
     constructor(data) {
         // take in data and calculate total users in data
         this.chartData = data;
-        let totalNumberOfPeople = data.reduce((sum, {total}) => sum + total, 0);
+        this.totalPeople = data.reduce((sum, {total}) => sum + total, 0);
         
         // query canvas and choose 2d style context
         const canvas = document.querySelector('canvas');
@@ -22,7 +23,7 @@ class PieChart {
         let currentAngle = 0;
         for (let row of data) {
             // calculating the angle the slice (portion) will take in the chart
-            let portionAngle = (row.total / totalNumberOfPeople) * 2 * Math.PI;
+            let portionAngle = (row.total / this.totalPeople) * 2 * Math.PI;
             // drawing an arc and line
             context.beginPath();
             context.arc(200, 200, 200, currentAngle, currentAngle + portionAngle);
@@ -34,7 +35,9 @@ class PieChart {
         }
     }
 
+    reload() {
 
+    }
 }
 
 
