@@ -1,9 +1,9 @@
 // Defining objects, classes, functions, etc. 
 // TEST DATA ARRAY
 const testData = [
-    {option: "Cheese", total: 777, shade: "#FFFF00"},
-    {option: "Pepperoni", total: 700, shade: "#FF0000"},
-    {option: "Neither", total: 300, shade: "#FF8800"}
+    {option: "Cheese", total: 12, shade: "#FFFF00"},
+    {option: "Pepperoni", total: 7, shade: "#FF0000"},
+    {option: "Neither", total: 3, shade: "#FF8800"}
 ];
 
 // PIECHART CLASS
