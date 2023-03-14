@@ -179,5 +179,9 @@ const literalRegex = /ab*/i;
 - string.split(regex) returns array of substrings that were between regex (though the parameter can also just be a string)
 - string.search(regex) returns index
 
+## Node
+General:
+- Make sure you include `node-modules` in your `.gitignore` file, since `package.json` and `package-lock.json` already contain all needed package info.
+
 ## Address Later
 - ...What are event listeners again?
