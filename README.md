@@ -183,5 +183,13 @@ const literalRegex = /ab*/i;
 General:
 - Make sure you include `node-modules` in your `.gitignore` file, since `package.json` and `package-lock.json` already contain all needed package info.
 
+Main Steps:
+1. Create your project directory
+2. Initialize it for use with NPM by running `npm init -y`
+3. Make sure `.gitignore file` contains `node-modules`
+4. Install any desired packages with `npm install <package name here>`
+5. Add `require('<package name here>')` to your JavaScript code
+6. Run your code with `node main.js`
+
 ## Address Later
 - ...What are event listeners again?
