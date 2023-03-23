@@ -114,7 +114,6 @@ Flex:
 General:
 - Javascript is hard
 - functions as parameters and return values for other functions? what is this sorcery
-- `<script>` in HTML
 - `const f = y => ++y;` (f increments and returns incremented value; if single line, no curly brackets or return means auto return)
 - It is possible to add new properties to a JavaScript object dynamically
 - `myArray.reduce((accumulator, currentValue) => {})` applies the arrow function (called a callback function in this case) to each value in the array, where the accumulator is the return value of the previous iteration (for the first iteration, 0 unless an initial value parameter is added after the arrow function).
@@ -178,6 +177,13 @@ const literalRegex = /ab*/i;
 - regex.test(string) returns boolean
 - string.split(regex) returns array of substrings that were between regex (though the parameter can also just be a string)
 - string.search(regex) returns index
+
+JS combined with HTML and CSS:
+- `<script>` in HTML
+- `const myElement = document.querySelector('#selector');` (Create a pointer to an element in the HTML document DOM tree; the selector can be any kind of selector)
+- `const newElement = document.createElement('p');`
+- 'newElement.classList.add('myClass');'
+- `myElement.appendChild(newElement);`
 
 ## Node
 General:
