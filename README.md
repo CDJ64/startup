@@ -26,7 +26,7 @@ Elastic Server IP: 18.219.88.108
 
 Domain: pizzapiefanclub.click
 
-Remote shell command: ssh -i [key pair file] ubuntu@[ip address]
+Remote shell command: ssh -i [key pair file (.pem)] ubuntu@[server ip address]
 
 # Class Notes
 ## Start
