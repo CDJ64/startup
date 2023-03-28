@@ -117,6 +117,7 @@ General:
 - `const f = y => ++y;` (f increments and returns incremented value; if single line, no curly brackets or return means auto return)
 - It is possible to add new properties to a JavaScript object dynamically
 - `myArray.reduce((accumulator, currentValue) => {})` applies the arrow function (called a callback function in this case) to each value in the array, where the accumulator is the return value of the previous iteration (for the first iteration, 0 unless an initial value parameter is added after the arrow function).
+- In `value = obj?.val;`, the question mark checks if `obj` is undefined before looking at `val`, to prevent `TypeError`
 
 Closure:
 ```
@@ -185,7 +186,7 @@ JS combined with HTML and CSS:
 - 'newElement.classList.add('myClass');'
 - `myElement.appendChild(newElement);`
 
-## Node
+## Node and Express
 General:
 - Make sure you include `node-modules` in your `.gitignore` file, since `package.json` and `package-lock.json` already contain all needed package info.
 
@@ -197,5 +198,18 @@ Main Steps:
 5. Add `require('<package name here>')` to your JavaScript code
 6. Run your code with `node main.js`
 
+## MongoDB
+Environmental variables:
+- Helpful for not including credentials in your code (publicly visible on github)
+- Development environment: set values in personal computer's environmental variables (System Variables)
+- Production environment: `ssh` into server and edit `/etc/environment` (`export MONGOVARIABLE=value`)
+- In code: `const variable = process.env.MONGOVARIABLE;`
+
+Restarting server environment:
+- Helpful if incorrect scoreboard database, etc.
+- `ssh` into server
+- `pm2 restart all --update-env`
+- `pm2 save`
+
 ## Address Later
-- ...What are event listeners again?
+- Remember to write down what event listeners do (check link in comment on that one assignment)
