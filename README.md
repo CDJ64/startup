@@ -211,5 +211,8 @@ Restarting server environment:
 - `pm2 restart all --update-env`
 - `pm2 save`
 
+## WebSocket
+- oh no
+
 ## Address Later
 - Remember to write down what event listeners do (check link in comment on that one assignment)
