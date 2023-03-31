@@ -1,6 +1,7 @@
-# I suppose I'll add what Simon has in its .gitignore...
+# I suppose I'll add what Simon has in its .gitignore... just in case
 .DS_Store
 node_modules/
 .vscode/
 dbkeys.sh
 cookie.txt
+dist/
