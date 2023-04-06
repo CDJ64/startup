@@ -215,7 +215,7 @@ Restarting server environment:
 - oh no
 
 ## React
-- Don't assume that things that work in HTML or JS will work in JSX.
+- Don't assume that things that work in HTML or JS will work in JSX. (eg. "className" instead of HTML's "class")
 
 ## Address Later
 - Remember to write down what event listeners do (check link in comment on that one assignment)
