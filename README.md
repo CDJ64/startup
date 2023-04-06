@@ -214,5 +214,8 @@ Restarting server environment:
 ## WebSocket
 - oh no
 
+## React
+- Don't assume that things that work in HTML or JS will work in JSX.
+
 ## Address Later
 - Remember to write down what event listeners do (check link in comment on that one assignment)
