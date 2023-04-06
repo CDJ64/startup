@@ -1,0 +1,15 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here at the Pizza Fanclub, you can exchange your pizza tastes with people around the world! Every user can choose their favorite type of pizza and also list their favorite individual toppings independently; and that's only one of many potential ways pizza fans could interact with each other at the Pizza Fanclub.[^1]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
