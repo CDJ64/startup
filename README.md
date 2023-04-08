@@ -216,6 +216,8 @@ Restarting server environment:
 
 ## React
 - Don't assume that things that work in HTML or JS will work in JSX. (eg. "className" instead of HTML's "class")
+- JSX: `<a className="nav-link" href="play.html">Play</a>`
+- React: `<NavLink className='nav-link' to='play'>Play</NavLink>` (used with `Route`s)
 
 ## Address Later
 - Remember to write down what event listeners do (check link in comment on that one assignment)
