@@ -198,6 +198,10 @@ Main Steps:
 5. Add `require('<package name here>')` to your JavaScript code
 6. Run your code with `node main.js`
 
+Middleware:
+- `use` is universal compared to `get`, `post`, etc.
+- All matched middlewares execute in order of order in code
+
 ## MongoDB
 Environmental variables:
 - Helpful for not including credentials in your code (publicly visible on github)
@@ -211,13 +215,38 @@ Restarting server environment:
 - `pm2 restart all --update-env`
 - `pm2 save`
 
+Queries:
+- `$or:` means or
+- '$lt:' means less than
+- etc.
+
+
 ## WebSocket
-- oh no
+- Peer to peer instead of client to server
+- In some example code, client sends message to server which sends something back
+- `wss.on('connection', () => {})` executes function when connection is made
+- `ws.on('message', () => {})` (inside above code's `{}`) executes function when server receives message
+- `NPM install ws` adds dependency to package.json file, adds source code to node_modules directory, and locks the version of the  `ws` package for your application
 
 ## React
+- JSX allows you to inject HTML into JS, componentizing HTML
+- JSX doesnt affect CSS
 - Don't assume that things that work in HTML or JS will work in JSX. (eg. "className" instead of HTML's "class")
 - JSX: `<a className="nav-link" href="play.html">Play</a>`
 - React: `<NavLink className='nav-link' to='play'>Play</NavLink>` (used with `Route`s)
+- `React.useEffect()` executes its first parameter (an updater, for example) initially, no matter what; if the second parameter updates, the useEffect executes again
+
+## Miscellaneous
+- Cookies allow a server to store data on the client's browser
+- You can use fetch in front-end AND back-end code
+- Linux daemons execute independent of the user
+- Hashing stored passwords is important for security by making the password unreadable
+- `exact` makes a `Route` need to be exact
+- Port 80 is reserved for HTTP
+- HTTP status codes in 300 range are for content redirects or caching
 
 ## Address Later
 - Remember to write down what event listeners do (check link in comment on that one assignment)
+- Standard HTTP Headers (Host, Content-Type, Cookie, etc); status code ranges
+- "Which express middleware will match this fetch request?" (request `/fave/ringo` (with `method: DELETE`) matches middleware `app.delete(/fav\/(.*)/, () => {})`)
+- Port numbers?
