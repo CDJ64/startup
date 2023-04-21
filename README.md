@@ -169,7 +169,7 @@ Regular Expressions:
 const objRegex = new RegExp('ab*', 'i');
 const literalRegex = /ab*/i;
 ```
-- `/` delimits expression (is start and end); stuff after (like i) sets certain rules/properties
+- `/` delimits expression (is start and end); backslash is needed for some characters; stuff after (like i) sets certain rules/properties
 - i means insensitive: NOT case sensitive
 - g means global: doesn't return after first match
 - m means multiline: ^/$ match start/end of line (respectively?)
@@ -219,6 +219,8 @@ HTTP Response:
 ```
 HTTP:
 - The most common verbs are GET, POST (create), PUT (update), DELETE, OPTIONS (get metadata)
+- Version example: `HTTP/1.1`
+- Header value format depends on header key (see Example Value in Common HTTP Headers)
 - Body is optional and separated from the rest by two newlines (a single blank line)
 - Status string can say something like "OK" (if the status code is 200)
 
@@ -232,7 +234,7 @@ HTTP Versions (also courtesy of class instruction):
 | 2022 | HTTP3   | QUIC for transport protocol, always encrypted   |
 
 Common HTTP Headers (again, courtest of class instruction...):
-| Header                      | Example                              | Meaning                                                                                              |
+| Header                      | Example Value                        | Meaning                                                                                              |
 | --------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | Authorization               | Bearer bGciOiJIUzI1NiIsI             | A token that authorized the user making the request.                                                 |
 | Accept                      | image/\*                             | What content format the client accepts. This may include wildcards.                                  |
@@ -287,6 +289,14 @@ Main Steps:
 Middleware:
 - `use` is universal compared to `get`, `post`, etc.
 - All matched middlewares execute in order of order in code
+- Middleware route path can use limited wildcard syntax or regular expressions (request `/fave/ringo` (with `method: DELETE`) matches middleware `app.delete(/fav\/(.*)/, () => {})`)
+```
+// Wildcard - matches /store/x and /star/y
+app.put('/st*/:storeName', (req, res) => res.send({ update: req.params.storeName }));
+
+// Pure regular expression - matches /store/abc and /store/pqrs (I think)
+app.delete(/\/store\/(.+)/, (req, res) => res.send({ delete: req.params[0] }));
+```
 
 ## MongoDB
 Environmental variables:
@@ -328,6 +338,3 @@ Queries:
 - Linux daemons execute independent of the user
 - Hashing stored passwords is important for security by making the password unreadable
 - `exact` makes a `Route` need to be exact
-
-## Address Later
-- "Which express middleware will match this fetch request?" (request `/fave/ringo` (with `method: DELETE`) matches middleware `app.delete(/fav\/(.*)/, () => {})`)
