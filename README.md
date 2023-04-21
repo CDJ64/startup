@@ -5,28 +5,22 @@
 Do you love pizza? Of course you do. But what *kind* of pizza do you like? Here at the Pizza Fanclub, you can exchange your pizza tastes with people around the world! Every user can choose their favorite type of pizza and also list their favorite individual toppings independently; and that's only one of many potential ways pizza fans could interact with each other at the Pizza Fanclub.[^1]
 
 ![A rough sketch depicting a Monthly Survey page where users can say whether they like pineapple pizza or not](/PizzaSketch.png)
+![A cropped screenshot showing an interactive pie chart where users can choose one of two pizzas (or neither)](/PizzaSample.png)
 
 ### Features
-- A user log-in system allowing people to store information about their pizza preferences
-- Favorite Pizza and/or Favorite Topping interfaces with pie charts
+- A user log-in system allowing people to store information about their pizza preferences[^1]
+- Favorite Pizza and/or Favorite Topping interfaces with pie charts[^1]
 - Monthly Surveys for even more detailed pizza tastes[^1]
 - Pizza Chat for pizza discussions[^1]
 - About section[^1]
 - And more![^1]
 
-[^1]: Features are subject to potential change/removal
+[^1]: Disclaimer: Right now the website is actually barebones; no guarantee as to whether I'll finish adding the mentioned features.
 
 ### Credits
 Made by CDJ64 for a computer science assignment.
 
 Special thanks to Sandra Moringa for her article/tutorial on pie charts! (https://www.section.io/engineering-education/javascript-canvas-piechart/)
-
-##### Startup Notes
-Elastic Server IP: 18.219.88.108
-
-Domain: pizzapiefanclub.click
-
-Remote shell command: ssh -i [key pair file (.pem)] ubuntu@[server public ip address]
 
 # Class Notes
 ## Start
